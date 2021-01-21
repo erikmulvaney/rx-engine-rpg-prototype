@@ -22,11 +22,11 @@ export class Player {
   static die = 'Die';
 
   static bindings = [
-    {keys: Key.Left, action: Player.moveLeft},
-    {keys: Key.Right, action: Player.moveRight},
-    {keys: Key.Up, action: Player.moveUp},
-    {keys: Key.Down, action: Player.moveDown},
-    {keys: Key.Shift, action: Player.run},
+    {keys: [Key.Left], action: Player.moveLeft},
+    {keys: [Key.Right], action: Player.moveRight},
+    {keys: [Key.Up], action: Player.moveUp},
+    {keys: [Key.Down], action: Player.moveDown},
+    {keys: [Key.Shift], action: Player.run},
   ];
 
   constructor(
